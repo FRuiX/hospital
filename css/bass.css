@@ -1,0 +1,322 @@
+p{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+/* #top 模块内样式*/
+.top{
+	line-height: 30px;
+	font-size: 13px;
+	color: #868686;
+}
+.top .call{
+	float: left;
+	padding-left: 20px; 
+	background: no-repeat center left url(../img/icon-call.png);
+}
+.top .welcome{
+	float: right; 
+}
+/* #header 模块内样式*/
+.header .logo{
+	width: 402px;
+	height: 74px;
+	padding: 9px;
+	display: inline-block;
+}
+.header .logo img{
+	width: 100%;
+	height: 100%;
+}
+/* #header 内search样式*/
+.header .search{
+	position: relative;
+	float: right;
+	height: 74px;
+	width: 330px;
+	line-height: 74px;
+	background: url(../img/ui-search.jpg) no-repeat center left;
+}
+.header .search .ui-search-select{
+	color: #fff;
+	font-size: 16px;
+	position: absolute;
+	left: 15px;
+	width: 50px;
+	cursor: pointer;
+}
+.header .search .ui-search-select-option{
+	position: absolute;
+	top: 56px;
+	left: 2px;
+	color: #a5a2a2;
+	width: 64px;
+	line-height: 24px;
+	background: #fff;
+	z-index: 2;
+	box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+	text-align: center;
+	font-size: 14px;
+	display: none;
+}
+.header .search .ui-search-select-option p{
+	display: block; 
+}
+.header .search .ui-search-select-option p:hover{
+	background: #ebeef5;
+	cursor: pointer;
+}
+.header .search .ui-search{
+	outline: none;
+	line-height: 32px;
+	width: 208px;
+	position: absolute;
+	left: 68px;
+	top: 19px;
+	padding-left: 5px;
+}
+.header .search .ui-search-submit{
+	position: absolute;
+	right: 5px;
+	height: 35px;
+	width: 38px;
+	top: 19px;
+}
+/*导航条内样式--水平方向的菜单*/
+.wrap>.menu-wrap{
+	margin-left: 200px;
+}
+.menu-wrap li{
+	float: left;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	color: #fff;
+	width: 110px;
+	padding-left: 30px;
+}
+.menu-wrap li:hover{
+	color: #d7f3ff;
+	cursor: pointer;
+}
+/*导航条内样式—————垂直方向的二级菜单*/ 
+.wrap>.menu-left{
+	position: absolute;
+	background: #1fa4f0;
+	height: 460px;
+	width: 190px;
+	left: 0;
+	top:0;
+	color: #fff;
+}
+.wrap>.menu-left h3{
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+.wrap>.menu-left .menu-left-list{
+	height: 36px;
+	line-height: 36px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.wrap>.menu-left .menu-left-list .menu-icon{
+	background: url(../img/icon-menu.jpg);
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top:5px;
+}
+.wrap>.menu-left .menu-left-list .menu-icon-1{
+	background-position: 21px 0;
+}
+.wrap>.menu-left .menu-left-list .menu-icon-2{
+	background-position: 21px 21px;
+}
+.wrap>.menu-left .menu-left-list .menu-icon-3{
+	background-position: 21px 42px;
+}
+.wrap>.menu-left .menu-left-list-link span:last-child{
+    float: right;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.wrap>.menu-left .menu-left-list .menu-item-detial{
+	position: absolute;
+	top: 36px;
+	left: 190px;
+	background: url(../img/bg-menu.jpg);
+	width:539px;
+	height: 423px;
+	padding: 20px;
+	display: none;
+	z-index: 5;
+}
+.wrap>.menu-left .menu-left-list .menu-item-detial h3{
+	color: #666;
+	text-align: left;
+	margin: 10px 0;
+}
+.wrap>.menu-left .menu-left-list .menu-item-detial a{
+	display: inline-block;
+	color: #868686;
+	font-size: 14px;
+	margin: 0 10px;
+}
+.wrap>.menu-left .menu-left-list .menu-item-detial a:hover{
+	color: #d7f3ff;
+}
+.wrap>.menu-left .menu-left-list .menu-item-detial a:after{
+	content: "|";
+	color: #868686;
+	padding-left: 20px;
+}
+.wrap>.menu-left .menu-left-list:hover{
+	background:#fff;
+	color: #868686;
+}
+.wrap>.menu-left .menu-left-list:hover .menu-icon-1{
+	background-position: 0 0;
+}
+.wrap>.menu-left .menu-left-list:hover .menu-icon-2{
+	background-position: 0 21px;
+}
+.wrap>.menu-left .menu-left-list:hover .menu-icon-3{
+	background-position: 0 42px;
+}
+.wrap>.menu-left .menu-left-list:hover .menu-item-detial{
+	display: block;
+}
+
+/*三级联动菜单*/
+.banner .banner-search h3{
+	text-align: center;
+	color: #fec009;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+}
+.banner .banner-search h3 span{
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background: url(../img/icon-help.png);
+    position: relative;
+    top: 5px;
+}
+.banner .banner-search select{
+	display: block;
+	width:  150px;
+	height: 25px;
+	margin: 10px auto;
+}
+.banner .banner-search button{
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	height:  35px;
+	background: #fec009;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	margin-top: 16px;
+}
+.banner .banner-help h3{
+	text-align: center;
+	color: #00b3ea;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+}
+.banner .banner-help h3 span{
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background: url(../img/icon-help.png);
+    background-position: 0 22px;
+    position: relative;
+    top: 5px;
+}
+.banner .banner-help .help-list{
+	width:80%;
+	margin: 0 auto;
+	color: #00b3ea;
+}
+.banner .banner-help .help-list a{
+	color: #00b3ea;
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+	margin-top: 10px;
+}
+/*轮播图*/
+.banner .banner-slider .slider-wrap{
+	position: absolute;
+	width: 10000px;
+	left: 0;
+	font-size:0;
+}
+.banner .banner-slider .slider-wrap a{
+	display: inline-block;
+}
+.banner .banner-slider .slider-process{
+	cursor: pointer;
+	position: absolute;
+	z-index: 2;
+	width: 80px;
+	height: 20px;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -40px;
+}
+.banner .banner-slider .slider-process .slider-process-img{
+	display: inline-block;
+	width: 20px;
+	height: 12px;
+	background: url(../img/ui-slider-process.png) no-repeat 0px 0px;
+}
+.banner .banner-slider .slider-process .slider-process-img.active{
+	background-position: -23px 0px ;
+}
+.banner .banner-slider .slider-pre,.slider-next{
+	cursor: pointer;
+	margin: 0 10px;
+	width: 30px;
+	height: 40px;
+	position: absolute;
+	z-index: 2;
+	background: url(../img/ui-slider-arrow.png) no-repeat -5px 0px;
+	top: 50%;
+	margin-top: -20px;
+}
+.banner .banner-slider .slider-next{
+	right: 0px;
+	background-position: -43px 0;
+}
+/*content-tab*/
+.content-tab .caption{
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	background: #f5f6fa;
+}
+.content-tab .caption a{
+	display: inline-block;
+	width: 112px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
