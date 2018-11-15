@@ -5,6 +5,7 @@
 	<title>城市医院挂号平台</title>
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
 	<link rel="stylesheet" type="text/css" href="css/bass.css">
+    <link rel="stylesheet" href="css/comment.css">
     <script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
 </head>
 <body>
@@ -36,11 +37,11 @@
     <div class="nav" id="nav">
         <div class="wrap">
             <ul class="menu-wrap">
-                <li>按医院挂号</li>   
-                <li>按科室挂号</li>   
-                <li>按疾病挂号</li>   
-                <li>最新公告</li>   
-                <li>社会知名医院</li>   
+                <li><a href="hospital.html">按医院挂号</a></li>
+                <li><a href="hospital.html">按科室挂号</a></li>
+                <li><a href="hospital.html">按疾病挂号</a></li>
+                <li><a href="hospital.html">最新公告</a></li>
+                <li><a href="hospital.html">社会知名医院</a></li>
             </ul>
             <ul class="menu-left">
                 <h3>全部科室</h3>
@@ -132,9 +133,12 @@
             </div>           
         </div>
     </div>
-    <div class="content" id="content">
-    	<div class="wrap clearfix">
-    		<div class="content-tab">                 
+    <div id="content" class="content">
+
+        <div class="wrap clearfix">
+
+            <div class="content-tab">
+
                 <div class="caption">
                     <a href="#8" class="item item_focus">医院</a>
                     <a href="#7" class="item ">科室</a>
@@ -142,7 +146,7 @@
                 <div class="block">
                     <div class="item">
                         <div class="block-caption">
-                            
+
                             <a href="#1" class="block-caption-item block-caption-item_focus">全部</a>
                             <a href="#1" class="block-caption-item">东城区</a>
                             <a href="#1" class="block-caption-item">西城区</a>
@@ -153,13 +157,13 @@
                             <a href="#1" class="block-caption-item">门头沟区</a>
                             <a href="#1" class="block-caption-item">房山区</a>
                             <a href="#1" class="block-caption-item">其他</a>
-                            
+
                         </div>
                         <div class="block-content">
-                            
+
                             <div class="block-wrap">
                                 <div class="block-list clearfix">
-                                    
+
                                     <div class="item">
                                         <img src="img/hospital-1.jpg" alt="xx医院" ／>
                                         <div class="item-name">北京协和医院<span class="item-level">【三级甲等】</span></div>
@@ -186,7 +190,7 @@
                                     </div>
                                 </div>
                                 <div class="block-text-list clearfix">
-                                    
+
                                     <a href="#9" class="item">首都儿科研究所附属儿童医院 <span class="level">【三级甲等】</span></a>
 
                                     <a href="#9" class="item">首都儿科研究所附属儿童医院 <span class="level">【三级甲等】</span></a>
@@ -209,15 +213,44 @@
                         科室内容
                     </div>
                 </div>
+
+
             </div>
-    	    <div class="content-news"></div>
-    	    <div class="content-close"></div>
-    	</div>
-    	
+
+            <div class="content-news">
+                <div class="caption"> 最新公告 <a href="#8" class="more">|更多</a> </div>
+                <div class="list">
+
+                    <a href="#9" class="link">阜外医院特需门诊暂停更新号源通...</a>
+                    <a href="#9" class="link">防护策略升级通知</a>
+                    <a href="#9" class="link">阜外医院特需门诊暂停更新号源通...</a>
+                    <a href="#9" class="link">防护策略升级通知</a>
+                    <a href="#9" class="link">阜外医院特需门诊暂停更新号源通...</a>
+                    <a href="#9" class="link">防护策略升级通知</a>
+
+                </div>
+            </div>
+            <div class="content-close">
+
+                <div class="caption"> 停诊公告 <a href="#8" class="more">|更多</a> </div>
+                <div class="list">
+
+                    <a href="#9" class="link">首都医科大学附属北京安贞医院消...</a>
+                    <a href="#9" class="link">首都医科大学附属北京安贞医院妇</a>
+                    <a href="#9" class="link">阜外医院特需门诊暂停更新号源通...</a>
+                    <a href="#9" class="link">北京安贞医院妇</a>
+                    <a href="#9" class="link">阜外医院特需门诊暂停更新号源通...</a>
+                    <a href="#9" class="link">北京安贞医院妇</a>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="footer" id="footer">
-    	
+
+    <div id="footer" class="footer">
+        Copyright © 2017慕课网版权所有
     </div>
+    <a href="#" class="go-top"></a>
 </body>
 <script type="text/javascript" src="./js/data.js"></script>
 <script type="text/javascript" src="./js/hospital.js"></script>

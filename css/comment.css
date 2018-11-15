@@ -1,0 +1,104 @@
+p{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+/* #top 模块内样式*/
+.top{
+    line-height: 30px;
+    font-size: 13px;
+    color: #868686;
+}
+.top .call{
+    float: left;
+    padding-left: 20px;
+    background: no-repeat center left url(../img/icon-call.png);
+}
+.top .welcome{
+    float: right;
+}
+/* #header 模块内样式*/
+.header .logo{
+    width: 402px;
+    height: 74px;
+    padding: 9px;
+    display: inline-block;
+}
+.header .logo img{
+    width: 100%;
+    height: 100%;
+}
+/* #header 内search样式*/
+.header .search{
+    position: relative;
+    float: right;
+    height: 74px;
+    width: 330px;
+    line-height: 74px;
+    background: url(../img/ui-search.jpg) no-repeat center left;
+}
+.header .search .ui-search-select{
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 15px;
+    width: 50px;
+    cursor: pointer;
+}
+.header .search .ui-search-select-option{
+    position: absolute;
+    top: 56px;
+    left: 2px;
+    color: #a5a2a2;
+    width: 64px;
+    line-height: 24px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}
+.header .search .ui-search-select-option p{
+    display: block;
+}
+.header .search .ui-search-select-option p:hover{
+    background: #ebeef5;
+    cursor: pointer;
+}
+.header .search .ui-search{
+    outline: none;
+    line-height: 32px;
+    width: 208px;
+    position: absolute;
+    left: 68px;
+    top: 19px;
+    padding-left: 5px;
+}
+.header .search .ui-search-submit{
+    position: absolute;
+    right: 5px;
+    height: 35px;
+    width: 38px;
+    top: 19px;
+}
+/*导航条内样式--水平方向的菜单*/
+.wrap>.menu-wrap{
+    margin-left: 200px;
+    position: relative;
+}
+.menu-wrap li{
+    float: left;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    width: 110px;
+    padding-left: 30px;
+}
+.menu-wrap li a{
+    color: #fff;
+}
+.menu-wrap li a:hover{
+    color: #d7f3ff;
+    cursor: pointer;
+}
