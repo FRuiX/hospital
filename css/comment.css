@@ -3,6 +3,36 @@ p{
     padding: 0;
     display: inline-block;
 }
+*{
+    margin : 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.clearfix:after{
+    content: '';
+    height: 0px;
+    line-height: 0px;
+    display: block;
+    clear: both;
+    zoom:1;
+}
+.top{
+    height: 30px;
+    background: #f5f5f5;
+}
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.header{
+    height: 92px;
+}
+.nav{
+    height: 36px;
+    background: #60bff2
+}
 /* #top 模块内样式*/
 .top{
     line-height: 30px;
@@ -96,9 +126,14 @@ p{
     padding-left: 30px;
 }
 .menu-wrap li a{
+    display: inline-block;
     color: #fff;
 }
 .menu-wrap li a:hover{
     color: #d7f3ff;
-    cursor: pointer;
+}
+.footer{
+    height: 70px;
+    padding: 25px 0;
+    background: #eceef2;
 }

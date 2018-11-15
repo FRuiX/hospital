@@ -1,4 +1,197 @@
 .nav .wrap .menu-wrap .firstlocation{
     position: absolute;
-    left: 0;
+    left: -150px;
+
+    height: 36px;
+    line-height: 36px;
+    width: 110px;
 }
+.nav .wrap .menu-wrap .firstlocation a{
+    color: #fff;
+}
+.menu-wrap .firstlocation a:hover{
+    color: #d7f3ff;
+}
+/*条件筛选区域*/
+.container{
+    min-height:100px;
+    width:1000px;
+    margin: 20px auto;
+    background: #fbfbfb;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container .group{
+    line-height:18px;
+    padding: 15px 180px 15px 20px;
+}
+.container .caption{
+    width: 75px;
+    font-size: 14px;
+    color: #4c4c48;
+    lin-height:18px;
+    display: inline-block;
+}
+.container  a{
+    font-size: 14px;
+    color: #4c4c48;
+    lin-height:18px;
+    margin-left:15px;
+    padding: 1px 4px;
+    position: relative;
+}
+.container  .group a.active{
+    background: #00b3ea;
+    color: #fff;
+}
+
+.container  a:after{
+    position: absolute;
+    content: '|';
+    right:-10px;
+    color: #ccc;
+    font-weight:lighter;
+}
+/*医院列表*/
+.hospital-list{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.hospital-list .hospital-group{
+    width: 100%;
+    height:177px;
+    border : 1px solid #f4f6fa;
+    position: relative;
+}
+.hospital-list .hospital-group .message{
+    margin-left:220px;
+}
+.hospital-list .hospital-group img{
+    position: absolute;
+    left:20px;
+    width:180px;
+    top: 20px;
+}
+.hospital-list .hospital-group .message .name{
+    margin-top: 30px;
+    font-size:16px;
+    color: #000;
+    line-height:30px;
+}
+.hospital-list .hospital-group .message .name .hospital-level{
+    font-size: 13px;
+    color: #f7b52c;
+}
+.hospital-list .hospital-group .message>div{
+    font-size:13px;
+    color: #888;
+    padding-left:25px;
+    line-height:25px;
+
+}
+.hospital-list .hospital-group .message .button{
+    position: absolute;
+    right:30px;
+    top: 75px;
+    width: 105px;
+    height:37px;
+    background: url("../img/button-now.png") no-repeat;
+}
+/*分页条*/
+.pagenation{
+    width:1000px;
+    border: 1px solid #f4f6fa;
+    height:45px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.pagenation a{
+    color: #666;
+    font-size:13px;
+    line-height:45px;
+}
+.pagenation a.item-pre,a.item-next{
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-pagination-arrow.png") no-repeat 6px 3px ;
+}
+.pagenation a.item-pre{
+    background-position: 4px -16px;
+}
+.pagenation .item-pre:hover{
+    background-position: -22px -16px;
+    background-color: #00b3ec;
+}
+.pagenation .item-next:hover{
+    background-position: -21px 3px;
+    background-color: #00b3ec;
+}
+.pagenation .page-wrap .page{
+    display: inline-block;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    line-height:20px;
+    width: 20px;
+    height: 20px;
+}
+.pagenation .page-wrap .page_active{
+    background-color: #00b3ea;
+    color: #fff;
+}
+.pagenation .item-text{
+    font-size:13px;
+}
+.pagenation .item-text .input-page{
+    width: 20px;
+    outline:none;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-left:10px;
+}
+.pagenation .item-text .input-submit{
+    display: inline-block;
+    width:35px;
+    height:27px;
+    border-radius: 5px;
+    position: relative;
+    outline:none;
+    top:8px;
+    margin-left:10px;
+    background: #00b3ea url("../img/icon-pagination-go.png") no-repeat 0px 0px ;
+}
+
+
+
+
+
+
+
+.footer{
+    text-align: center;
+    font-size:12px;
+    color: #666;
+    line-height:70px;
+}
+
+
+
+
+
+
+
+
+

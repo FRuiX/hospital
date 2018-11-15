@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>按医院挂号</title>
     <link rel="stylesheet" href="css/comment.css">
-    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/hospital.css">
     <script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
 </head>
@@ -40,7 +39,7 @@
     <div class="nav" id="nav">
         <div class="wrap">
             <ul class="menu-wrap">
-                <li href="index.html" class="firstlocation">首页</li>
+                <li class="firstlocation"><a href="index.html">首页</a></li>
                 <li><a href="hospital.html">按医院挂号</a></li>
                 <li><a href="hospital.html">按科室挂号</a></li>
                 <li><a href="hospital.html">按疾病挂号</a></li>
@@ -49,7 +48,70 @@
             </ul>
         </div>
     </div>
+    <div class="container">
+        <div class="group">
+            <div class="caption">医院类型
+            </div>
+            <a href="#" class="condition active">全部</a>
+            <a href="#" class="condition">卫生部直属医院</a>
+            <a href="#" class="condition">北京区县属医院</a>
+            <a href="#" class="condition">其他</a>
+        </div>
+        <div class="group">
+            <div class="caption">医院等级
+            </div>
+            <a href="#" class="active condition">全部</a>
+            <a href="#" class="condition">三级甲等</a>
+            <a href="#" class="condition">三级合格</a>
+        </div>
+        <div class="group">
+            <div class="caption">医院位置
+            </div>
+            <a href="#" class="condition active">全部</a>
+            <a href="#" class="condition">朝阳区</a>
+            <a href="#" class="condition">西城区</a>
+            <a href="#" class="condition">海淀区</a>
+            <a href="#" class="condition">丰台区</a>
+            <a href="#" class="condition">顺义区</a>
+            <a href="#" class="condition">通州区</a>
+        </div>
+    </div>
+    <div class="hospital-list">
+        <div class="hospital-group">
+            <img src="img/hospital-1.jpg" alt="">
+            <div class="message">
+                <div class="name">
+                    <span class="hospital-name">首都儿科附属医院</span>
+                    <span class="hospital-level">三级甲等</span>
+                </div>
+                <div class="time">放号时间 14：30</div>
+                <div class="phone">电话：85695756</div>
+                <div class="address">地址：北京市朝阳区雅宝路二号</div>
+                <a href="" class="button">&nbsp;</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="pagenation">
+        <a class="item-first ">首页</a>
+        <a class="item-pre">&nbsp;</a>
+        <span class="page-wrap">
+            <a href="" class="page page_active">1</a>
+        </span>
+        <a class="item-next">&nbsp;</a>
+        <a href="#" class="item-last">尾页</a>
+        <a href="" class="item-count">共计1页</a>
+        <span class="item-text">
+            到
+            <input type="text" class="input-page" name="input-page">
+            <input type="button" class="input-submit">
+        </span>
+    </div>
+    <div id="footer" class="footer">
+        Copyright © 2017慕课网版权所有
+    </div>
 </body>
 <script type="text/javascript" src="./js/hospital.js"></script>
 <script type="text/javascript" src="./js/data.js"></script>
+<script type="text/javascript" src="./js/pagenation.js"></script>
 </html>

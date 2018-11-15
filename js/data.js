@@ -97,4 +97,20 @@ AjaxRemoteGetData.getDepartmentArrByHospitalName = function(name){
 }
 
 console.log(AjaxRemoteGetData.getDepartmentArrByHospitalName('首都儿科研究所附属儿童医院'))
-
+AjaxRemoteGetData.getHospitalArrByFilter=function(type,level,area){
+	var hospitalList = ['医院列表'];
+	for(var i = 1; i< storage.hospital.length ;i++){
+		var _type = storage.hospital[i][2];
+		var _level = storage.hospital[i][1];
+		var _area = storage.hospital[i][0];
+		if(
+			(type===_type || type ==="全部")
+			&& (level === _level || level ==="全部")
+			&& (area === _area || area === "全部")
+        ){
+			hospitalList.push(storage.hospital[i])
+		}
+	}
+	return hospitalList;
+};
+console.log(AjaxRemoteGetData.getHospitalArrByFilter("全部","三级合格","全部"));
