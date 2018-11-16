@@ -10,8 +10,8 @@
     currentPageActive(1);
     pageCount();
 //    将所有事件绑定在筛选按钮点击上
-    $('.group').find('.condition').on('click',function(e){
-        $(this).parent('.group').children().removeClass('active');
+    $('.container .group').on('click','a',function(e){
+        $(this).parent('.group').children('.condition').removeClass('active');
         $(this).addClass('active');
         getHospitalListBycondition('.container .group');
         allPageCount(getHospitalListBycondition('.container .group'));
@@ -70,9 +70,18 @@
      //输入页数进入相应的页面
     $('.pagenation .input-submit').on('click',function(){
         current = $('.pagenation .input-page').val();
-        currentPageActive(current);
-        template(getHospitalListBycondition('.container .group'),current-1);
-        return false;
+        var regexp=/^[0-9]*$/;
+        console.log(regexp.test(current));
+        if(regexp.test(current) && current>0 &&current <= Math.round(getHospitalListBycondition('.container .group').length/3)){
+            currentPageActive(current);
+            template(getHospitalListBycondition('.container .group'),current-1);
+            $('.pagenation .input-page').val('');
+            return false;
+        }else{
+            $('.pagenation .input-page').val('');
+            return false;
+        }
+
     });
 
     //分页条的页数确定
@@ -118,7 +127,7 @@
         if(hospitalListGroup.length>=1){
             var last = current*3+3;
             if(last >hospitalListGroup.length ){
-                last = hospitalListGroup.length
+                last = hospitalListGroup.length;
             }
             for(index = current*3 ;index < last;index++){
                 var el = $("<div class=\"hospital-group\">\n" +
@@ -131,7 +140,7 @@
                     "                <div class=\"time\">"+hospitalListGroup[index][7]+"</div>\n" +
                     "                <div class=\"phone\">"+hospitalListGroup[index][5]+"</div>\n" +
                     "                <div class=\"address\">"+hospitalListGroup[index][4]+"</div>\n" +
-                    "                <a href=\"\" class=\"button\">&nbsp;</a>\n" +
+                    "                <a href=\"./appointment.html\" class=\"button\">&nbsp;</a>\n" +
                     "            </div>");
                 $(".hospital-list").append(el);
             }
