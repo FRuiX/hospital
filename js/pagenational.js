@@ -8,6 +8,7 @@
     template(getHospitalListBycondition('.container .group'),current);
     allPageCount(getHospitalListBycondition('.container .group'));
     currentPageActive(1);
+    pageCount();
 //    将所有事件绑定在筛选按钮点击上
     $('.container .group').on('click',function(e){
         $(this).children('.condition').removeClass('active');
@@ -16,6 +17,7 @@
         allPageCount(getHospitalListBycondition('.container .group'));
         currentPageActive(1);
         template(getHospitalListBycondition('.container .group'),0);
+        pageCount();
         e.preventDefault();
     });
     //页面按钮被点击执行高亮，并且返回当前页面值
@@ -60,6 +62,10 @@
         template(getHospitalListBycondition('.container .group'),current-1);
         return false;
     });
+    //共计多少页
+    function pageCount(){
+        $('.pagenation .item-count').text('共计'+Math.round(getHospitalListBycondition('.container .group').length/3)+'页')
+    }
 
      //输入页数进入相应的页面
     $('.pagenation .input-submit').on('click',function(){
