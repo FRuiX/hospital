@@ -1,0 +1,19 @@
+.nav .wrap .menu-wrap .firstlocation{
+    position: absolute;
+    left: -150px;
+    height: 36px;
+    line-height: 36px;
+    width: 110px;
+}
+.nav .wrap .menu-wrap .firstlocation a{
+    color: #fff;
+}
+.menu-wrap .firstlocation a:hover{
+    color: #d7f3ff;
+}
+.footer{
+    text-align: center;
+    font-size:12px;
+    color: #666;
+    line-height:70px;
+}

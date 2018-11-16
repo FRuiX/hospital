@@ -1,7 +1,6 @@
 .nav .wrap .menu-wrap .firstlocation{
     position: absolute;
     left: -150px;
-
     height: 36px;
     line-height: 36px;
     width: 110px;
@@ -56,6 +55,7 @@
 /*医院列表*/
 .hospital-list{
     width: 1000px;
+    height: 531px;
     margin: 0 auto;
     position: relative;
 }

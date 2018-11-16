@@ -10,9 +10,9 @@
     currentPageActive(1);
     pageCount();
 //    将所有事件绑定在筛选按钮点击上
-    $('.container .group').on('click',function(e){
-        $(this).children('.condition').removeClass('active');
-        $(e.target).addClass('active');
+    $('.group').find('.condition').on('click',function(e){
+        $(this).parent('.group').children().removeClass('active');
+        $(this).addClass('active');
         getHospitalListBycondition('.container .group');
         allPageCount(getHospitalListBycondition('.container .group'));
         currentPageActive(1);
@@ -114,8 +114,13 @@
         $(".hospital-list").empty();
         hospitalListGroup = hospitalListGroup.slice(1);
         var index = 0;
+
         if(hospitalListGroup.length>=1){
-            for(index = current*3 ;index < current*3+3;index++){
+            var last = current*3+3;
+            if(last >hospitalListGroup.length ){
+                last = hospitalListGroup.length
+            }
+            for(index = current*3 ;index < last;index++){
                 var el = $("<div class=\"hospital-group\">\n" +
                     "            <img src=\""+hospitalListGroup[index][6]+"\" >\n" +
                     "            <div class=\"message\">\n" +
