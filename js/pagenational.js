@@ -40,7 +40,6 @@
 
     $('.pagenation .item-next').on('click',function(){
         current =parseInt($('.pagenation').find('.page_active').text())+1;
-        console.log(current)
         if(current>Math.round(getHospitalListBycondition('.container .group').length/3)){
             current =1;
         }
@@ -71,7 +70,6 @@
     $('.pagenation .input-submit').on('click',function(){
         current = $('.pagenation .input-page').val();
         var regexp=/^[0-9]*$/;
-        console.log(regexp.test(current));
         if(regexp.test(current) && current>0 &&current <= Math.round(getHospitalListBycondition('.container .group').length/3)){
             currentPageActive(current);
             template(getHospitalListBycondition('.container .group'),current-1);

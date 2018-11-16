@@ -47,7 +47,7 @@ AjaxRemoteGetData.getDistinctArea = function() {
 	}
 	return area;
 }
-console.log(AjaxRemoteGetData.getDistinctArea())
+// console.log(AjaxRemoteGetData.getDistinctArea())
 
 AjaxRemoteGetData.getLeveByArea  = function( area ){
 	var level = ["医院等级"];
@@ -64,7 +64,7 @@ AjaxRemoteGetData.getLeveByArea  = function( area ){
 	}
 	return level;
 }
-console.log(AjaxRemoteGetData.getLeveByArea("朝阳区"));
+// console.log(AjaxRemoteGetData.getLeveByArea("朝阳区"));
 
 AjaxRemoteGetData.getNameByAreaAndLevel = function( area , level ){
 	var name = ["医院名称"];
@@ -81,7 +81,7 @@ AjaxRemoteGetData.getNameByAreaAndLevel = function( area , level ){
 	}
 	return name;
 }
-console.log(AjaxRemoteGetData.getNameByAreaAndLevel("朝阳区","三级合格"))
+// console.log(AjaxRemoteGetData.getNameByAreaAndLevel("朝阳区","三级合格"))
 
 
 AjaxRemoteGetData.getDepartmentArrByHospitalName = function(name){
@@ -96,7 +96,7 @@ AjaxRemoteGetData.getDepartmentArrByHospitalName = function(name){
 	return department;
 }
 
-console.log(AjaxRemoteGetData.getDepartmentArrByHospitalName('首都儿科研究所附属儿童医院'))
+// console.log(AjaxRemoteGetData.getDepartmentArrByHospitalName('首都儿科研究所附属儿童医院'))
 AjaxRemoteGetData.getHospitalArrByFilter=function(type,level,area){
 	var hospitalList = ['医院列表'];
 	for(var i = 1; i< storage.hospital.length ;i++){
@@ -113,4 +113,4 @@ AjaxRemoteGetData.getHospitalArrByFilter=function(type,level,area){
 	}
 	return hospitalList;
 };
-console.log(AjaxRemoteGetData.getHospitalArrByFilter("全部","三级合格","全部"));
+// console.log(AjaxRemoteGetData.getHospitalArrByFilter("全部","三级合格","全部"));
