@@ -240,9 +240,11 @@
     text-align: center;
 }
 
+.information_table .cancel_wrap{
+    text-align: center;
+}
 .information_table .cancel_wrap p{
     margin-top: 200px;
-    width: 1000px;
     text-align: center;
     color: #1fa4f0;
     font-size:16px;
