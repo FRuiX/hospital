@@ -136,7 +136,6 @@
     position: relative;
     width: 1000px;
     height:530px;
-    overflow: scroll;
 }
 .container .table .information_table .register_table{
     width: 690px;
@@ -185,7 +184,7 @@
     font-size:12px;
 }
 .container .table .information_table .register_menu .register_message{
-    overflow: scroll;
+    overflow-y: auto;
     height: 335px;
     padding: 0 10px;
     font-size:13px;
@@ -204,14 +203,12 @@
     font-size:14px;
 }
 .information_table .rule_wrap,.introduce_wrap,.stopMessage_wrap,.cancel_wrap{
-    overflow-y: scroll;
+    overflow-y: auto;
+    height:530px;
     padding: 20px 10px;
     color: #868686;
     line-height: 22px;
     font-size:14px;
-}
-.information_table .rule_wrap,.introduce_wrap,.stopMessage_wrap{
-    overflow-y: scroll;
 }
 
 .information_table .rule_wrap p,.introduce_wrap p{
