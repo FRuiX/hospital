@@ -162,11 +162,12 @@
     line-height:30px;
     text-align: center;
 }
+.container .table .information_table .register_table td a{
+    color: #888888;
+}
 .container .table .information_table .register_menu{
     position: absolute;
-    overflow: scroll;
     width: 250px;
-    height:300px;
     right:0px;
     top: 0px;
     border: 1px solid #d7f3ff;
@@ -184,12 +185,15 @@
     font-size:12px;
 }
 .container .table .information_table .register_menu .register_message{
+    overflow: scroll;
+    height: 335px;
     padding: 0 10px;
     font-size:13px;
     margin-top: 20px;
     line-height:20px;
 }
 .container .table .information_table .register_menu .register_message p{
+    display: block;
     padding-left:70px;
     position: relative;
 }
@@ -201,12 +205,16 @@
 }
 
 .information_table .rule_wrap,.introduce_wrap,.stopMessage_wrap,.cancel_wrap{
-    overflow: scroll;
+    overflow-y: scroll;
     padding: 20px 10px;
     color: #868686;
     line-height: 22px;
     font-size:14px;
 }
+.information_table .rule_wrap,.introduce_wrap,.stopMessage_wrap{
+    overflow-y: scroll;
+}
+
 .information_table .rule_wrap p,.introduce_wrap p{
     text-indent: 2ch;
     display: block;

@@ -39,7 +39,7 @@
     function moveTo(){
     	slider.wrap.animate({
     		left : width*index*-1
-    	 })
+    	 });
     	slider.processImg.removeClass('active').eq(index).addClass('active')
     }
     // 切换到下一张
