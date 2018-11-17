@@ -203,7 +203,6 @@
     color: #000;
     font-size:14px;
 }
-
 .information_table .rule_wrap,.introduce_wrap,.stopMessage_wrap,.cancel_wrap{
     overflow-y: scroll;
     padding: 20px 10px;
